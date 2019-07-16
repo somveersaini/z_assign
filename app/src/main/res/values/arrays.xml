@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="selection">
+        <item>Artist</item>
+        <item>Album</item>
+    </array>
+    <array name="selection2">
+        <item>" 1 "</item>
+        <item>" 2 "</item>
+        <item>" 3 "</item>
+        <item>" 4 "</item>
+        <item>" 5 "</item>
+    </array>
+</resources>
