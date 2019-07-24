@@ -8,9 +8,9 @@ import kotlin.collections.HashMap
 
 class DataRepository(application: Application) {
 
-    private val rowList: ArrayList<CSVRow> = CSVDataHelper().readCSVFile(
+    private val rowList: ArrayList<CSVRow> by lazy {  CSVDataHelper().readCSVFile(
             InputStreamReader(application.assets.open("sample_music_data.csv"))
-    )
+    )}
 
     fun getAlbumSongList(): ArrayList<SongList> {
         val map = HashMap<String, ArrayList<String>>()
